@@ -1,0 +1,45 @@
+// Breakpoints
+
+$phone-width: 480px;
+$desktop-width: 1024px;
+
+// Colour palette
+
+$brand-color: #25b5f1;
+$theme-grey: #a6a6a6;
+$near-black: #2e2e2e;
+
+// Box Model
+
+$theme-grey-border: 1px solid #a6a6a6;
+$near-black-border: 1px solid #2e2e2e;
+
+// Structure
+
+$base__space-unit: 1.5em;
+
+// Colors
+
+$color__background-body: #fff;
+$color__text-main: #222222;
+
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+// Typography
+
+$font__main: 'Source Sans Pro', sans-serif;
+$font__headline: 'Montserrat', sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;

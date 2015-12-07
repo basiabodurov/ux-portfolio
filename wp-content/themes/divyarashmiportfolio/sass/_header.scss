@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.responsive-menu li a {
+  text-transform: capitalize;
+}
+.social {
+    width: 43px;
+    height: 100vh;
+    background-color: #fff;
+    border-left: $theme-grey-border;
+    position: fixed;
+    right: 0;
+    top: 35px;
+    z-index: 99999;
+  ul {
+    list-style: none;
+    box-sizing: content-box;
+    width: 45px;
+    margin: 0;
+    padding: 0;
+  li {
+    background-color: #fff;
+    border-bottom: $theme-grey-border;
+    text-align: center;
+    font-size: 1.8rem;
+    }
+  }
+}
+
+.fa {
+  color: $theme-grey;
+}
+.fa:hover {
+    color: $brand-color;
+}
+
+.featured-image img {
+  width: 100%;
+  height: auto;
+  top: 0;
+  position: fixed;
+  z-index: -9;
+}
+.site-branding {
+  background: linear-gradient(0deg, rgba(75, 75, 75, 0.5), rgba(75, 75, 75, 0.5));
+  height: 8rem;
+  // padding-bottom: 3rem;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  h1 {
+  text-shadow: 2px 2px 8px #4b4b4b;
+  font-size: 1.5rem;
+}
+
+  .page-template-contact & { //& .sit-branding
+    background-color: #4b4b4b;
+  }
+}
+.page-title h1 {
+color: #fff;
+text-shadow: 2px 2px 8px #4b4b4b;
+text-align: left;
+margin-left: 18%;
+font-family: $font__main;
+font-weight: 500;
+font-size: 1.5rem;
+padding-top: 2rem;
+position: relative;
+}
+
+.entry-header {
+  color: #fff;
+  text-align: left;
+  margin-left: 2rem;
+  font-family: $font__main;
+  font-size: 1rem;
+  position: fixed;
+  z-index: 9999;
+  // padding-top: 3rem;
+}
+
+/* Header Landing Page */
+.logo {
+  color: #fff;
+  font-family: $font__headline;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-left: -2rem;
+  text-shadow: 1px 1px 2px #4b4b4b;
+  h1 {
+    display: inline;
+    padding: 0.9em 0em;
+    box-decoration-break: clone;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.5rem;
+    padding-top: 0.3rem;
+    line-height: 0.6rem;
+    width: 4rem;;
+  }
+  .fancy {
+  line-height: 0.5;
+  text-align: center;
+  margin-top: -1.6rem;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid white;
+  box-shadow: 0 0 1px 1px rgba(75, 75, 75, 0.35);
+  top: 0;
+  width: 40px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 35px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 35px;
+}
+}

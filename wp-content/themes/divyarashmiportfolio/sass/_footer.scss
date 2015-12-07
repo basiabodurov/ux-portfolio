@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-info {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 1rem;
+  margin-top: 1rem;
+  p {
+    font-family: $font__main;
+    margin-bottom: 0.5rem;
+    font-size: 0.6rem;
+    color: #fff;
+    font-weight: light;
+  }
+}
