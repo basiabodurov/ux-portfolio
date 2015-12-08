@@ -16,9 +16,7 @@ get_header();
 <p><?php echo esc_html( CFS()->get( 'extra_info_1' ) ); ?></p>
 <h2><?php echo esc_html( CFS()->get( 'facts' ) ); ?></h2>
 
-
-<div class="grid-3_xs-1">
-<div class="col">
+<div class="interest-section-flex-container">
 <div class="interest-image"><?php
 	$attachment_id = 40; // attachment ID
 	$image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
@@ -28,9 +26,7 @@ get_header();
 	<?php } ?>
 <p><?php echo esc_html( CFS()->get( 'image_caption1' ) ); ?></p>
 </div><!-- interest-image -->
-<div><!-- col end -->
 
-<div class="col">
 <div class="interest-image"><?php
 	$attachment_id = 40; // attachment ID
 	$image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
@@ -40,9 +36,7 @@ get_header();
 	<?php } ?>
 <p><?php echo esc_html( CFS()->get( 'image_caption2' ) ); ?></p>
 </div><!-- interest-image -->
-<div><!-- col end -->
 
-<div class="col">
 <div class="interest-image"><?php
 	$attachment_id = 40; // attachment ID
 	$image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
@@ -52,50 +46,57 @@ get_header();
 	<?php } ?>
 <p><?php echo esc_html( CFS()->get( 'image_caption3' ) ); ?></p>
 </div><!-- interest-image -->
-<div><!-- col end -->
-	
-</div><!-- grid for interest image ends -->
+
+</div><!-- flex grid for interest image ends -->
 
 <div="skills"><h2><?php echo esc_html( CFS()->get( 'skills' ) ); ?></h2></div>
 
 <!-- Animated skillbars -->
-<div class="skillbars-wrapper">
+<div class="skills-section-container clearfix-skills-section">
 
-<div class="skillbar clearfix " data-percent="50%">
-	<div class="skillbar-title" style="background: #25b5f1;"><span>Public Speaking</span></div>
-	<div class="skillbar-bar" style="background: #25b5f1;"></div>
-	<div class="skill-bar-percent">50%</div>
-</div> <!-- End Skill Bar -->
+	<div class="skillbars-wrapper">
+		<div class="skillbar clearfix " data-percent="50%">
+			<div class="skillbar-title" style="background: #25b5f1;"><span>Public Speaking</span></div>
+			<div class="skillbar-bar" style="background: #25b5f1;"></div>
+			<div class="skill-bar-percent">50%</div>
+		</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="70%">
-	<div class="skillbar-title" style="background: #25b5f1;"><span>Communication</span></div>
-	<div class="skillbar-bar" style="background: #25b5f1;"></div>
-	<div class="skill-bar-percent">70%</div>
-</div> <!-- End Skill Bar -->
+		<div class="skillbar clearfix " data-percent="70%">
+			<div class="skillbar-title" style="background: #25b5f1;"><span>Communication</span></div>
+			<div class="skillbar-bar" style="background: #25b5f1;"></div>
+			<div class="skill-bar-percent">70%</div>
+		</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="90%">
-	<div class="skillbar-title" style="background: #25b5f1;"><span>Wireframing</span></div>
-	<div class="skillbar-bar" style="background: #25b5f1;"></div>
-	<div class="skill-bar-percent">90%</div>
-</div> <!-- End Skill Bar -->
+		<div class="skillbar clearfix " data-percent="90%">
+			<div class="skillbar-title" style="background: #25b5f1;"><span>Wireframing</span></div>
+			<div class="skillbar-bar" style="background: #25b5f1;"></div>
+			<div class="skill-bar-percent">90%</div>
+		</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="70%">
-	<div class="skillbar-title" style="background: #25b5f1;"><span>Communication</span></div>
-	<div class="skillbar-bar" style="background: #25b5f1;"></div>
-	<div class="skill-bar-percent">70%</div>
-</div> <!-- End Skill Bar -->
+		<div class="skillbar clearfix " data-percent="70%">
+			<div class="skillbar-title" style="background: #25b5f1;"><span>Communication</span></div>
+			<div class="skillbar-bar" style="background: #25b5f1;"></div>
+			<div class="skill-bar-percent">70%</div>
+		</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="90%">
-	<div class="skillbar-title" style="background: #25b5f1;"><span>Wireframing</span></div>
-	<div class="skillbar-bar" style="background: #25b5f1;"></div>
-	<div class="skill-bar-percent">90%</div>
-</div> <!-- End Skill Bar -->
-</div> <!-- end skillbars-wrapper -->
+		<div class="skillbar clearfix " data-percent="90%">
+			<div class="skillbar-title" style="background: #25b5f1;"><span>Wireframing</span></div>
+			<div class="skillbar-bar" style="background: #25b5f1;"></div>
+			<div class="skill-bar-percent">90%</div>
+		</div> <!-- End Skill Bar -->
+	</div> <!-- end skillbars-wrapper -->
 
+<div class="skills-text">
 <p><?php echo esc_html( CFS()->get( 'extra_info_2' ) ); ?></p>
-<h2><?php echo esc_html( CFS()->get( 'others_say' ) ); ?></h2>
-<div class="testimony1"><p><?php echo esc_html( CFS()->get( 'testimony1' ) ); ?></p></div>
+</div> <!-- end .skills-text -->
 
+</div><!-- end of .skills-section-container -->
+
+<h2><?php echo esc_html( CFS()->get( 'others_say' ) ); ?></h2>
+
+<div class="testimony-container">
+<div class="testimony-block">
+<div class="testimony1"><p><?php echo esc_html( CFS()->get( 'testimony1' ) ); ?></p></div>
 <div class="testimony-image1"><?php
 $attachment_id = 46; // attachment ID
 $image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
@@ -105,9 +106,10 @@ if( $image_attributes ) {
 <?php } ?>
 </div>
 <span class="testimony-caption"><p><?php echo esc_html( CFS()->get( 'testimony_image_caption1' ) ); ?></p></span>
+</div><!-- .testimony-block -->
 
+<div class="testimony-block">
 <div class="testimony2"><p><?php echo esc_html( CFS()->get( 'testimony2' ) ); ?></p></div>
-
 <div class="testimony-image2"><?php
 $attachment_id = 46; // attachment ID
 $image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
@@ -117,9 +119,14 @@ if( $image_attributes ) {
 <?php } ?>
 </div>
 <span class="testimony-caption"><p><?php echo esc_html( CFS()->get( 'testimony_image_caption2' ) ); ?></p></span>
+</div><!-- .testimony-block -->
+
+</div> <!-- .testimony-container -->
 
 				</div> <!-- .content-wrapper -->
 			</div><!-- .content-->
+
+
 
 
 		</main><!-- #main -->

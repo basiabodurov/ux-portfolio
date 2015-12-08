@@ -36,7 +36,7 @@
 								<li><a target="_blank" href="https://www.facebook.com/divya.rashmi.104?ref=br_rs"><i class="fa fa-facebook-square"></i></a></li>
 								<li><a target="_blank" href="https://www.linkedin.com/in/divyarashmi"><i class="fa fa-linkedin"></i></a></li>
 								<li><a target="_blank" href="https://twitter.com/allokik_kiran"><i class="fa fa-twitter"></i></a></li>
-								<li><a target="_blank" href="https://www.behance.net/divyabhardwaj03"><i class="fa fa-behance"></i></a></li>
+								<li><a target="_blank" href="https://www.behance.net/divyarashmi"><i class="fa fa-behance"></i></a></li>
 							</ul>
 						</div>
 
