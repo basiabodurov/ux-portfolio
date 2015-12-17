@@ -20,8 +20,8 @@ get_header('home'); ?>
 					</div>
 
 					<div class="landing-page-btns">
-								<a href="<?php echo get_post_type_archive_link( 'project' ); ?>"><button class="blue">Projects</button></a>
-								<a href="http://divyarashmi.com/wp-content/uploads/2015/12/Resume_DivyaRashmi.pdf"><button class="grey">Download Resume</button></a>
+								<a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="blue-btn">Projects</a>
+								<a href="http://divyarashmi.com/wp-content/uploads/2015/12/Resume_DivyaRashmi.pdf" class="grey-btn">Download Resume</a>
 						</div>
 
 				<?php while ( have_posts() ) : the_post(); ?>

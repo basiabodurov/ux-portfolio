@@ -11,16 +11,16 @@ get_header( 'index' ); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="content">
-				<div class="content-wrapper">
+				<!-- <div class="content-wrapper"> -->
 
 		<?php while ( have_posts() ) : the_post(); ?>
-			
-			<h2><?php echo esc_html( CFS()->get( 'post_header' ) ); ?></h2>
-			<p><?php echo esc_html( CFS()->get( 'post_copy' ) ); ?></p>
+
+		<?php get_template_part( 'template-parts/content', 'single' ); ?>
+
 			<div class="single-project-navigation">
 			<?php the_post_navigation( array(
-								'prev_text' => '<i class="fa fa-caret-left"></i> Previous',
-								'next_text' => 'Next <i class="fa fa-caret-right"></i>',
+								'prev_text' => '<i class="fa fa-caret-left"></i> <span class="previous">Previous</span>',
+								'next_text' => '<span class="next">Next</span> <i class="fa fa-caret-right"></i>',
 						) ); ?>
 				</div>
 			<?php
@@ -33,7 +33,7 @@ get_header( 'index' ); ?>
 		<?php endwhile; // End of the loop. ?>
 
 
-	</div> <!-- .content-wrapper -->
+	<!-- </div> <!-- .content-wrapper -->
 </div><!-- .content-->
 
 		</main><!-- #main -->

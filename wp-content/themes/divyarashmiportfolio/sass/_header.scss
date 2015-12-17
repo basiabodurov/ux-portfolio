@@ -44,7 +44,7 @@
 }
 .site-branding {
   background: linear-gradient(0deg, rgba(75, 75, 75, 0.5), rgba(75, 75, 75, 0.5));
-  height: 8rem;
+  height: 10rem;
   // padding-bottom: 3rem;
   top: 0;
   width: 100%;
@@ -73,12 +73,13 @@ position: relative;
 .entry-header {
   color: #fff;
   text-align: left;
-  margin-left: 2rem;
+  margin-left: 14%;;
   font-family: $font__main;
+  font-weight: 300;
   font-size: 1rem;
   position: fixed;
   z-index: 9999;
-  // padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 /* Header Landing Page */
@@ -133,4 +134,37 @@ position: relative;
   left: 100%;
   margin-left: 35px;
 }
+}
+
+
+/* Media queries */
+/*-----------------------------------------*/
+/* Tablet */
+@media all and (min-width: 700px) {
+  .entry-header {
+    color: #fff;
+    text-align: left;
+    margin-left: 23%;;
+    font-family: $font__main;
+    font-weight: 300;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 2rem;
+  }
+}
+
+/* Desktop */
+@media all and (min-width: 1000px) {
+  .entry-header {
+    color: #fff;
+    text-align: left;
+    margin-left: 26%;;
+    font-family: $font__main;
+    font-weight: 300;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 2rem;
+  }
 }

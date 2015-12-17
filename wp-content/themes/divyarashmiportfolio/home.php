@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The main template file.
  *
  * @package RED_Starter_Theme
  */
@@ -9,15 +9,17 @@ get_header( 'navonly' ); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
 			<div class="content">
-				<div class="content-wrapper grid-top-spaceAround">
+				<div class="content-wrapper grid-top-spaceBetween-spaceAround">
 
-				<?php if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<?php if ( is_home() && ! is_front_page() ) : ?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
-			</header><!-- .page-header -->
+				</header>
+			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -28,16 +30,18 @@ get_header( 'navonly' ); ?>
 
 			<?php the_posts_navigation(); ?>
 
-			<?php else : ?>
+		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
+
 		<?php endif; ?>
 
-			</div> <!-- .content-wrapper -->
-		</div><!-- .content-->
+	</div> <!-- .content-wrapper -->
+</div><!-- .content-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 
 <?php get_footer(); ?>

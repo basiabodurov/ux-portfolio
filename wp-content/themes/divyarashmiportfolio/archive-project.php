@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying the "project" post type archive pages.
  *
  * @package RED_Starter_Theme
  */
@@ -18,18 +18,21 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				 <div class="project-grid-item">
+				<div class="grid-wrapper">
+					<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
+					 <div class="project-grid-item project-grid-item-container">
 
-					 <div class="image-overlay">
-					 <?php if ( has_post_thumbnail() ) : ?>
-									 <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail( 'medium' ); ?></a>
-							</div>
+						 <div class="image-overlay">
+						 <?php if ( has_post_thumbnail() ) : ?>
+										 <?php the_post_thumbnail( 'medium' ); ?>
+								</div>
 
-							<span><?php the_title( '<h1 class="project-title">', '</h1>' ); ?></span>
+								<span><?php the_title( '<h1 class="project-title">', '</h1>' ); ?></span>
 
-								<?php endif; ?>
-				 </div><!--  end project-grid-item -->
-
+									<?php endif; ?>
+					 </div><!--  end project-grid-item -->
+			 		</a>
+</div><!--  end grid wrapper -->
 			<?php endwhile; ?>
 
 		<?php else : ?>

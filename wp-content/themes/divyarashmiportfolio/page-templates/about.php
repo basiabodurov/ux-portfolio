@@ -52,7 +52,7 @@ get_header();
 <div="skills"><h2><?php echo esc_html( CFS()->get( 'skills' ) ); ?></h2></div>
 
 <!-- Animated skillbars -->
-<div class="skills-section-container clearfix-skills-section">
+<div class="skills-section-container">
 
 	<div class="skillbars-wrapper">
 		<div class="skillbar clearfix " data-percent="50%">
@@ -90,7 +90,7 @@ get_header();
 <p><?php echo esc_html( CFS()->get( 'extra_info_2' ) ); ?></p>
 </div> <!-- end .skills-text -->
 
-</div><!-- end of .skills-section-container -->
+</div> <!-- end of .skills-section-container -->
 
 <h2><?php echo esc_html( CFS()->get( 'others_say' ) ); ?></h2>
 
